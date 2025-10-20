@@ -25,7 +25,7 @@ template = PromptTemplate(template = """You are a professional food expert. The 
 prompt = template.invoke({
     'user_input': user_input
 })
-if st.button("Summarize"):
+if st.button("Generate Recipe"):
     result = model.invoke(prompt)
     st.write(result.content)
 
